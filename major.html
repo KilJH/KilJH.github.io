@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JINHYEOK KIL">
+    <title>자기소개 | 길진혁의 포트폴리오</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <!-- 메뉴바 -->
+    <header>
+        <nav>
+            <a href="./index.html">홈</a>
+            <a href="./introduction.html">자기소개</a>
+            <a href="./major.html" class="current">학업생활</a>
+            <a href="./univ.html">대학생활</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <!-- <header class="greeting full">
+            <h1></h1>
+        </header> -->
+        <section class="full columnFlex" id="graph">
+            <h2>학점그래프</h2>
+            <section class="flex">
+                <object type="image/svg+xml" data="img/myPointGraph.svg" width="75%"></object>
+                <div class="columnFlex">
+                    <h3 name="semester">1학년 1학기</h3>
+                    <table class="point">
+                        <caption>
+                            4.03/4.5</caption>
+                        <tr>
+                            <td>C프로그래밍</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>C프로그래밍 실습</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>공업수학</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>정보사회론</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>우리말과 글의 기초</td>
+                            <td>A0</td>
+                        </tr>
+                        <tr>
+                            <td>기초영어</td>
+                            <td>B+</td>
+                        </tr>
+                    </table>
+                    <h4>학기 소감</h4>
+                    <p>필수 및 지정과목만으로도 학점이 꽉 차서 내가 듣고싶은 수업을 골라 듣지 못한 것은 아쉬웠다. 하지만 전공과목인 C프로그래밍을 통해 개발에 대한 흥미와 적성을 발견했고
+                        포인터로 주소값을 직접 만질 수 있다는 게 매력으로 다가왔다.</p>
+                </div>
+            </section>
+            <section class="flex lectureComment">
+                <div>
+                    <h4>가장 감명깊은 수업: 공업수학</h4>
+                    <p>교차지원으로 오게되어 당연히 알고있어야하는 공식이나 지식을 모르는 상태로 듣게 되었다. 삼각함수를 미적분 하는 것도 처음이었던 내게 푸리에 급수나 변환은 끝이 보이지 않는
+                        벽과 같았다. 하지만 악바리 근성으로 교재를 외우다시피하며 다른 학우들에게도 질문을 통해 발전했다. 그 노력과 발전이 학점으로 나타난 것 같아서 뿌듯했다.</p>
+                </div>
+                <div>
+                    <h4>가장 아쉬웠던 수업: 기초영어</h4>
+                    <p>원어민 교수님이라는 점이 처음에는 상당히 기대되었다. 그러나 각 학생들의 회화실력의 차이를 고려하지 못한 수업방식 등으로 인해 실력이 좋지않았던 나는 수업에 흥미를 느끼지
+                        못하였다. 그 후 자기계발을 통해 회화실력을 어느정도 키운 지금 다시 그 수업을 들으면 더 재미있게 들을 수 있지않을까 하는 생각에 아쉬움을 느낀다.</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="map">
+            <h2>기술 지도</h2>
+            <p>제가 배웠던 기술의 관계를 볼 수 있고 원의 크기로 숙련도를 알아볼 수 있습니다.</p>
+            <div class="flex">
+                <object type="image/svg+xml" data="img/skillMap.svg" width="100%" class="skillSvg"></object>
+            </div>
+        </section>
+        <section class="full projectContainer">
+            <section class="fullItem columnFlex" id="project">
+                <header>
+                    <h2>진행해 온 프로젝트</h2>
+                </header>
+                <div class="flex">
+                    <div class="projectItem">
+                        <a href="https://github.com/springframework-storage/SKHU-Mentoring" target="_blank">
+                            <h2>SM멘토링</h2>
+                            <p>개요: 학부 SM멘토링사업 관리 사이트 제작</p>
+                            <p>프로젝트 기간: 2017.09 ~ 12(4개월)</p>
+                            <p>사용기술: Java, Spring, MySQL, Bootstrap </p>
+                        </a>
+                        <a href="https://github.com/springframework-storage/SKHU-Mentoring" target="_blank">
+                            <button>github가기</button></a>
+                    </div>
+                    <div class="projectItem"><a href="https://github.com/enJOYSONG/SkhuEClass" target="_blank">
+                            <h2>SKHU e-class</h2>
+                            <p>개요: 학교 과제제출 시스템 제작</p>
+                            <p>프로젝트 기간: 2018.03 ~ 06(4개월)</p>
+                            <p>사용기술: Python, Django, MySQL, Bootstrap </p>
+                        </a>
+                        <a href="https://github.com/enJOYSONG/SkhuEClass" target="_blank">
+                            <button>github가기</button></a>
+                    </div>
+                    <div class="projectItem"><a href="https://kiljh.github.io/momentum-clone/" target="_blank">
+                            <img src="./img/logo/momentum.png" height="56">
+                            <p>개요: 일정관리 앱 모멘텀 클론</p>
+                            <p>프로젝트 기간: 2021.02(1개월)</p>
+                            <p>사용기술: HTML, CSS, Javascipt, React</p>
+                            <a href="https://kiljh.github.io/momentum-clone/" target="_blank"></a>
+                            <button>보러가기(VanillaJS)</button>
+                        </a>
+                        <a href="https://github.com/KilJH/momentum-clone-react" target="_blank">
+                            <button>github가기(React)</button></a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="projectItem"><a href="https://github.com/KilJH/localhost_web" target="_blank">
+                            <img src="./img/logo/localhostLogo_white.png" height="56">
+                            <p>개요: 여행지 현지인 매칭 웹 플랫폼 제작</p>
+                            <p>프로젝트 기간: 2021.03 ~ (진행중)</p>
+                            <p>사용기술: Typescript, React, Node.js, Next.js, MySQL</p>
+                        </a>
+                        <a href="https://github.com/KilJH/localhost_web" target="_blank">
+                            <button>github가기</button></a>
+                    </div>
+                    <div class="projectItem">
+                        <a href="#">
+                            <img src="./img/logo/louisviutton.png" height="56">
+                            <p>개요: 루이비통 홈페이지 클론</p>
+                            <p>프로젝트 기간: 2021.02 ~ (일시중단)</p>
+                            <p>사용기술: Javascript, React, Node.js, MySQL</p>
+                        </a>
+                        <a href="https://github.com/KilJH/" target="_blank">
+                            <button>github가기</button></a>
+                    </div>
+                    <div class="projectItem"></div>
+                </div>
+            </section>
+        </section>
+
+        <section class="flex btnContainer">
+            <a href="introduction.html"> <button class="pageBtn">자기소개 보러가기</button></a>
+            <a href="univ.html"><button class="pageBtn">대학생활 보러가기</button></a>
+        </section>
+    </section>
+
+
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">맨 위로</a>
+                </li>
+                <li>
+                    <a href="#graph">학점그래프</a>
+                </li>
+                <li>
+                    <a href="#map">스킬맵</a>
+                </li>
+                <li>
+                    <a href="#project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="#footer">맨 밑으로</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <footer id="footer">
+        2021-1학기 웹 개발 입문 &copy; 길진혁
+    </footer>
+</body>
+
+</html>

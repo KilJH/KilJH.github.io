@@ -1,0 +1,497 @@
+html {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 디폴트 없애기 */
+body {
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	list-style: none;
+}
+
+/* 양쪽 배경색을 위한 패딩 부여 */
+section.container > * {
+	padding: 0 calc((100vw - 1000px) / 2);
+}
+
+/* 메뉴 */
+header > nav {
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	display: block;
+	width: 100vw;
+	background-color: white;
+	z-index: 10;
+	border-bottom: 1px solid #aaa;
+}
+header > nav > a {
+	margin: 0 0.5rem;
+}
+header > nav > a:hover {
+	opacity: 0.6;
+}
+header > nav > a.current {
+	color: #5197d5;
+	font-weight: 600;
+}
+
+.main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.columnFlex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex > h2 {
+	text-align: center;
+	flex: 1;
+}
+
+.flex > div {
+	flex: 1;
+	text-align: center;
+}
+
+/* 메인화면 */
+/* 메인화면 버튼 */
+.imgBtn > div {
+	display: flex;
+	justify-content: center;
+}
+.imgBtn img {
+	display: block;
+}
+
+.imgBtn a {
+	position: absolute;
+	transform: translateX(-175px);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.imgBtn a:nth-of-type(2) {
+	transform: translateX(175px);
+}
+.imgBtn a:hover {
+	opacity: 1;
+}
+
+/* 자기소개 */
+.full {
+	height: 120vh;
+	position: sticky;
+	top: -10vh;
+	background-color: white;
+}
+.fullItem {
+	height: 100vh;
+	width: 1000px;
+}
+/* 프로필 */
+.profile {
+	color: #eee;
+}
+.profile > table {
+	flex: 1;
+}
+.profile > table caption {
+	padding: 0 2rem;
+	text-align: left;
+}
+.profile > table td {
+	padding: 0.5rem 2rem;
+}
+.profile > table td:first-child {
+	text-align: left;
+}
+.profile > table td:last-child {
+	text-align: left;
+}
+.profileImg {
+	border-radius: 50%;
+}
+
+.paperBackground {
+	background: url('../img/background.jpg');
+	background-size: cover;
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+/* 인삿말 */
+.greeting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -5;
+	background-color: #5197d5 !important;
+	height: 100vh !important;
+	top: 0 !important;
+	color: #eee;
+	font-size: 1.2em;
+}
+.greeting > h1 {
+	animation: fadeIn 2s ease;
+}
+
+/* 스킬 */
+#skill {
+	height: 200vh;
+	background-color: #34495e;
+}
+
+.skillDesc {
+	position: sticky;
+	top: calc(50% - 20rem);
+	padding: 16rem 0;
+	margin-top: 2rem;
+	color: #eee;
+}
+
+/* 차별점 */
+.meritBox {
+	border: 2px solid black;
+	height: 256px;
+	padding: 2rem;
+	margin: 0 0.5rem;
+}
+.meritBox p {
+	text-align: left;
+	text-indent: 1em;
+}
+
+/* 코멘트 */
+#comment .flex,
+#project .flex,
+#contact .flex {
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 2rem;
+}
+#comment .flex > div {
+	min-width: 25%;
+}
+#comment img {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	object-fit: cover;
+}
+#comment h4 {
+	margin-top: 0.25em;
+}
+#comment p {
+	padding: 0 1rem;
+}
+
+/* 콘택트 */
+#contact {
+	height: 100vh;
+}
+
+.contactIcon {
+	width: 200px;
+	height: 200px;
+	display: inline-flex;
+	border-radius: 50%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+.contactIcon:hover {
+	background-color: rgba(128, 128, 128, 0.1);
+}
+.contactIcon:active {
+	background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* 학점그래프 */
+#graph.full,
+#club.full {
+	height: 100vh;
+	top: 0;
+	/* z-index: 0; */
+}
+
+table.point {
+	margin: 0 auto;
+	width: 100%;
+}
+table.point caption {
+	font-weight: bold;
+}
+table.point td:first-child {
+	text-align: left;
+}
+table.point td:last-child {
+	text-align: right;
+}
+
+.lectureComment > div {
+	border: 2px solid black;
+	padding: 0 1rem;
+	margin: 0 0.5rem;
+}
+.lectureComment > div > h4 {
+	margin: 0;
+	padding: 0 1rem;
+	display: inline-block;
+	transform: translate(0px, -10px);
+	background-color: white;
+}
+
+/* 스킬 */
+#map {
+	/* background: #34495e; */
+	background-color: white;
+	padding-top: 4rem;
+	z-index: 1;
+	position: sticky;
+}
+#map h2 {
+	position: sticky;
+	top: 2rem;
+	background: white;
+	margin: 0;
+	padding: 1rem;
+}
+
+/* 프로젝트 */
+.projectContainer {
+	background-color: #34495e;
+	color: #eee;
+}
+.projectItem {
+	padding: 1rem;
+	width: 33%;
+	height: 256px;
+}
+.projectItem:hover {
+	background: rgba(128, 128, 128, 0.1);
+}
+.projectItem:active {
+	background: rgba(128, 128, 128, 0.3);
+}
+.projectItem button {
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.projectItem button:hover {
+	background-color: #ccc;
+}
+.projectItem button:focus {
+	outline: none;
+	/* background: radial-gradient(#5197d5, white); */
+}
+
+/* 대학생활 */
+.imgContainer {
+	width: 100%;
+	height: 40rem;
+	display: flex;
+}
+.imgContainer > div:first-child {
+	flex: 1;
+	background-color: #eee;
+}
+.imgContainer > div:first-child > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.imgContainer > div:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+.imgContainer > div:nth-child(2) > img {
+	width: 10rem;
+	transition: opacity 0.2s ease;
+}
+.imgContainer > div:nth-child(2) > img:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#club p,
+#ssaf p,
+#agriculture p,
+#tutoring p,
+#certification p {
+	text-align: left;
+	line-height: 160%;
+}
+
+/* 강조 */
+span.skyblue {
+	font-weight: bold;
+	color: #5197d5;
+}
+span.yellow {
+	font-weight: bold;
+	color: #f1c40f;
+}
+
+/* 페이지버튼 */
+button.pageBtn {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	font-size: 2em;
+	border: none;
+	background-color: lightskyblue;
+	color: #eee;
+	cursor: pointer;
+	z-index: 3;
+	transition: font-size 0.2s ease, background-color 0.3s ease;
+}
+button.pageBtn:hover {
+	font-size: 3em;
+	background-color: #5197d5;
+	color: white;
+}
+button.pageBtn:active {
+	background-color: #3177b5;
+}
+button.pageBtn:focus {
+	outline: none;
+}
+.btnContainer {
+	position: relative;
+	background: white;
+	z-index: 10;
+}
+
+/* 옆에 안내 */
+aside {
+	position: fixed;
+	height: 100vh;
+	right: 0px;
+	top: 0;
+	line-height: 200%;
+	color: #333;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(47, 65, 83, 0.31)
+	);
+}
+aside:hover {
+	color: black;
+}
+aside > nav > ul {
+	padding-left: 32px;
+	padding-right: 16px;
+}
+aside a {
+	transition: color, font-weight 0.3s ease;
+}
+aside a:hover {
+	color: #5197d5;
+	font-weight: bold;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: 0.9em;
+	background-color: white;
+	border-top: 1px solid #aaa;
+	padding: 8px calc((100vw - 1000px) / 2);
+	box-sizing: border-box;
+}
+
+img.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -3;
+	opacity: 0.6;
+	background: #34495e;
+	animation: backgroundFadeIn 1s ease;
+}
+
+/* SVG */
+svg .clickable {
+	transition: all 0.2s ease;
+}
+svg .clickable:hover {
+	fill: #5197d5 !important;
+	stroke: #5197d5 !important;
+	cursor: pointer;
+}
+
+svg .clickable.point:hover {
+	stroke-width: 64px !important;
+}
+
+svg .clickable.skill:hover {
+	stroke-width: 0.05px !important;
+}
+svg .clickable.skill circle {
+	transition: stroke-width 0.1s ease;
+}
+svg .clickable.skill circle:hover {
+	fill: #5197d5 !important;
+	stroke-width: 8px !important;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes backgroundFadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.6;
+	}
+}

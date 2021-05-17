@@ -1,7 +1,7 @@
-let _scrollTop = window.scrollY || document.documentElement.scrollTop;
-let fullHeight = document.body.clientHeight;
-
 window.onload = function () {
+	let _scrollTop = window.scrollY || document.documentElement.scrollTop;
+	let fullHeight = document.body.clientHeight;
+
 	// 스크롤 될 때마다 현재위치 저장
 	window.addEventListener('scroll', function () {
 		_scrollTop = window.scrollY || document.documentElement.scrollTop;

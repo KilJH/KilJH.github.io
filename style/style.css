@@ -112,6 +112,8 @@ header > nav > a.current {
 	position: sticky;
 	top: -10vh;
 	background-color: white;
+
+	box-shadow: 0px -4px 64px rgba(0, 0, 0, 0.6);
 }
 .fullItem {
 	height: 100vh;
@@ -277,10 +279,11 @@ table.point td:last-child {
 	padding-top: 4rem;
 	z-index: 1;
 	position: sticky;
+	box-shadow: 0px -4px 64px rgba(0, 0, 0, 0.6);
 }
 #map h2 {
 	position: sticky;
-	top: 2rem;
+	top: 3rem;
 	background: white;
 	margin: 0;
 	padding: 1rem;
@@ -393,6 +396,7 @@ button.pageBtn:focus {
 	position: relative;
 	background: white;
 	z-index: 10;
+	box-shadow: 0px -4px 64px rgba(0, 0, 0, 0.6);
 }
 
 /* 옆에 안내 */
@@ -439,6 +443,7 @@ footer {
 	box-sizing: border-box;
 	background-color: white;
 	z-index: 15;
+	position: sticky;
 }
 
 img.background {

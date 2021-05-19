@@ -85,6 +85,10 @@ header > nav > a.current {
 
 /* 메인화면 */
 /* 메인화면 버튼 */
+.imgBtn {
+	opacity: 0;
+	transition: opacity 1.2s ease;
+}
 .imgBtn > div {
 	display: flex;
 	justify-content: center;
@@ -163,6 +167,10 @@ header > nav > a.current {
 }
 .greeting > h1 {
 	animation: fadeIn 2s ease;
+}
+.mainGreeting {
+	transition: opacity 2s ease;
+	opacity: 0;
 }
 
 /* 스킬 */

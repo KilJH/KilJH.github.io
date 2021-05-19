@@ -40,22 +40,33 @@ window.onload = function () {
 
 		clock.innerText = time;
 	}
-	// 시계느낌으로 깜빡거리기
-	function flicker() {
-		clock.style.display = 'none';
-		setTimeout(function () {
-			clock.style.display = 'block';
-		}, 300);
-		// if (clock.style.display === 'none') clock.style.display = 'block';
-		// else if (clock.style.display !== 'none') clock.style.display = 'none';
+	if (clock) {
+		setClock();
+		setInterval(setClock, 5000);
 	}
+	// const btns = document.getElementsByClassName('btn');
+	// for (let i = 0; i < btns.length; i++) {
+	// 	btns[i].style.display = 'none';
+	// 	setTimeout(() => {
+	// 		btns[i].style.display = 'block';
+	// 	}, 100);
+	// }
 
-	setClock();
-	setInterval(setClock, 5000);
+	const greeting = document.getElementsByClassName('mainGreeting')[0];
+	const btnContainer = document.getElementsByClassName('imgBtn')[0];
+	greeting.style.opacity = '0';
+	btnContainer.style.opacity = '0';
+	setTimeout(() => {
+		greeting.style.opacity = '1';
+	}, 300);
+	setTimeout(() => {
+		btnContainer.style.opacity = '1';
+	}, 500);
+
+	// 대학생활
 
 	// 부모의 형제의 자식
 	function setImg(e) {
-		console.log(e.target.parentNode.previousElementSibling);
 		const selectedSrc = e.target.src;
 		const mainImg = e.target.parentNode.previousElementSibling.children[0];
 		mainImg.src = selectedSrc;

@@ -233,6 +233,38 @@
         2021-1학기 웹 개발 입문 &copy; 길진혁
     </footer>
 
+    <script>
+        // 스크롤에 맞춰 이미지 바꾸기
+        function changeLogo() {
+            let _scrollTop = window.scrollY || document.documentElement.scrollTop;
+            let fullHeight = document.body.clientHeight;
+
+            // 스크롤 될 때마다 현재위치 저장
+            window.addEventListener('scroll', function () {
+                _scrollTop = window.scrollY || document.documentElement.scrollTop;
+                fullHeight = document.body.clientHeight;
+            });
+            // 스크롤 영역 210vh~ 410vh
+            // console.log(_scrollTop / fullHeight);
+            var img = document.getElementById('changedImg');
+            var nextImg = new Image();
+            nextImg.src = './img/logo/nextjs.png';
+
+            if (img) {
+                if (_scrollTop / fullHeight > 0.39) img.src = './img/logo/nextjs.png';
+                else if (_scrollTop / fullHeight > 0.355)
+                    img.src = './img/logo/nodejs.png';
+                else if (_scrollTop / fullHeight > 0.32)
+                    img.src = './img/logo/typescript.png';
+                else if (_scrollTop / fullHeight > 0.285)
+                    img.src = './img/logo/react.png';
+                else if (_scrollTop / fullHeight > 0.25)
+                    img.src = './img/logo/htmlcss.png';
+                else img.src = './img/logo/javascript.png';
+            }
+        }
+        window.addEventListener('scroll', changeLogo);
+    </script>
     <script type="text/javascript" src="./script/script.js"></script>
 </body>
 

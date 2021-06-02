@@ -45,6 +45,20 @@
     <footer id="footer">
         2021-1학기 웹 개발 입문 &copy; 길진혁
     </footer>
+    <script>
+        const greeting = document.getElementsByClassName('mainGreeting')[0];
+        const btnContainer = document.getElementsByClassName('imgBtn')[0];
+        if (greeting) {
+            greeting.style.opacity = '0';
+            btnContainer.style.opacity = '0';
+            setTimeout(() => {
+                greeting.style.opacity = '1';
+            }, 300);
+            setTimeout(() => {
+                btnContainer.style.opacity = '1';
+            }, 500);
+        }
+    </script>
     <script type="text/javascript" src="./script/script.js"></script>
 </body>
 

@@ -51,7 +51,7 @@
                 <h2>서울거리예술축제 자원봉사🎨</h2>
                 <p>15년 - 서울거리예술축제(SSAF, 구 하이서울페스티벌) 길동이 참여</p>
                 <p>매년 서울에서 전세계의 거리예술가가 모여 축제를 엽니다. 2015년 저는 자원봉사자로 참가해 축제를 안내하고 안전을 책임지고 또 그 축제를 즐겼습니다.<br>
-                지자체에서 주관하는 행사라 체계적인 구성을 통해 활동할 수 있었고 다양한 자원봉사자로부터도 태도나 열정 등 많은 것을 배울 수 있었습니다.
+                    지자체에서 주관하는 행사라 체계적인 구성을 통해 활동할 수 있었고 다양한 자원봉사자로부터도 태도나 열정 등 많은 것을 배울 수 있었습니다.
                 </p>
                 <div class="imgContainer">
                     <div>
@@ -181,6 +181,25 @@
     <footer id="footer">
         2021-1학기 웹 개발 입문 &copy; 길진혁
     </footer>
+
+    <script>
+        // 부모의 형제의 자식
+        function setImg(e) {
+            const selectedSrc = e.target.src;
+            const mainImg = e.target.parentNode.previousElementSibling.children[0];
+            mainImg.src = selectedSrc;
+        }
+
+        // 이미지 선택 시 사진 바뀌게
+        const imgContainer = document.getElementsByClassName('imgContainer');
+
+        for (let i = 0; i < imgContainer.length; i++) {
+            const selectionContainer = imgContainer[i].children[1];
+            for (let j = 0; j < selectionContainer.children.length; j++) {
+                selectionContainer.children[j].addEventListener('click', setImg);
+            }
+        }
+    </script>
     <script type="text/javascript" src="./script/script.js"></script>
 </body>
 

@@ -253,6 +253,14 @@ header > nav > a.current {
 	/* z-index: 0; */
 }
 
+#point_desc h4 {
+	margin: 1rem 0 0.25rem 0;
+}
+#point_desc p {
+	margin: 0;
+	white-space: break-spaces;
+	text-align: left;
+}
 table.point {
 	margin: 0 auto;
 	width: 100%;
@@ -267,6 +275,9 @@ table.point td:last-child {
 	text-align: right;
 }
 
+.lectureComment {
+	width: 100%;
+}
 .lectureComment > div {
 	border: 2px solid black;
 	padding: 0 1rem;

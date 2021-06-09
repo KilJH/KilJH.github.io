@@ -59,6 +59,9 @@ header > nav > a.current {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	width: 80%;
+	max-width: 700px;
 }
 
 .flex {
@@ -88,6 +91,7 @@ header > nav > a.current {
 .imgBtn {
 	opacity: 0;
 	transition: opacity 1.2s ease;
+	position: relative;
 }
 .imgBtn > div {
 	display: flex;
@@ -99,12 +103,15 @@ header > nav > a.current {
 
 .imgBtn a {
 	position: absolute;
-	transform: translateX(-175px);
+	transform: translateX(-50%);
 	opacity: 0;
 	transition: opacity 0.3s ease;
+
+	width: 50%;
+	max-width: 350px;
 }
 .imgBtn a:nth-of-type(2) {
-	transform: translateX(175px);
+	transform: translateX(50%);
 }
 .imgBtn a:hover {
 	opacity: 1;
@@ -282,6 +289,7 @@ table.point td:last-child {
 	border: 2px solid black;
 	padding: 0 1rem;
 	margin: 0 0.5rem;
+	height: 10rem;
 }
 .lectureComment > div > h4 {
 	margin: 0;

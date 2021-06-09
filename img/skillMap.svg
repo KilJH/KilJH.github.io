@@ -70,7 +70,7 @@
         </g>
         <g class="clickable skill" id="JS" transform="matrix(1,0,0,1,400.421,756.425)">
             <g transform="matrix(2,0,0,2,67,29)">
-                <circle cx="83" cy="120" r="16"/>
+                <circle cx="83" cy="120" r="20"/>
             </g>
             <g transform="matrix(1,0,0,1,46.1875,59.3114)">
                 <g transform="matrix(29.1667,0,0,29.1667,126.015,272.805)">
@@ -107,7 +107,7 @@
         </g>
         <g class="clickable skill" id="Next.js" transform="matrix(1,0,0,1,368.304,974.59)">
             <g transform="matrix(2,0,0,2,67,29)">
-                <circle cx="83" cy="120" r="16"/>
+                <circle cx="83" cy="120" r="12"/>
             </g>
             <g transform="matrix(1,0,0,1,46.1875,59.3114)">
                 <g transform="matrix(29.1667,0,0,29.1667,145.133,272.805)">
@@ -135,7 +135,7 @@
         </g>
         <g class="clickable skill" id="HTML-CSS" serif:id="HTML,CSS" transform="matrix(1,0,0,1,393.273,581.492)">
             <g transform="matrix(2,0,0,2,67,29)">
-                <circle cx="83" cy="120" r="16"/>
+                <circle cx="83" cy="120" r="20"/>
             </g>
             <g transform="matrix(1,0,0,1,46.1875,59.3114)">
                 <g transform="matrix(25,0,0,25,120.523,272.805)">
@@ -189,14 +189,14 @@
                 <circle cx="673" cy="390" r="16"/>
             </g>
         </g>
-        <g class="clickable skill" id="공업수학1" serif:id="공업수학" transform="matrix(1,0,0,1,-501,-436.708)">
+        <g class="clickable skill" id="C" serif:id="C" transform="matrix(1,0,0,1,-501,-436.708)">
             <g transform="matrix(1,0,0,1,523.123,348.945)">
                 <g transform="matrix(25,0,0,25,179.585,272.805)">
                     <path d="M0.341,-0.031C0.42,-0.031 0.481,-0.049 0.526,-0.075L0.526,-0.142C0.484,-0.121 0.434,-0.098 0.351,-0.098C0.197,-0.098 0.133,-0.198 0.133,-0.37L0.133,-0.403C0.133,-0.581 0.223,-0.657 0.35,-0.657C0.416,-0.657 0.466,-0.642 0.519,-0.621L0.519,-0.687C0.478,-0.709 0.426,-0.724 0.354,-0.724C0.183,-0.724 0.049,-0.63 0.049,-0.39L0.049,-0.37C0.049,-0.143 0.16,-0.031 0.341,-0.031Z" />
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="24"/>
             </g>
         </g>
         <g class="clickable skill" id="소켓" transform="matrix(1,0,0,1,-347.671,-168.042)">
@@ -242,7 +242,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="30"/>
             </g>
         </g>
         <g class="clickable skill" id="MFC" transform="matrix(1,0,0,1,-494,-119.187)">
@@ -258,7 +258,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="390" r="20"/>
             </g>
         </g>
         <g class="clickable skill" id="논리회로" transform="matrix(1,0,0,1,59.4167,-87)">
@@ -302,7 +302,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="390" r="20"/>
             </g>
         </g>
         <g class="clickable skill" id="OpenGL-ES" serif:id="OpenGL ES" transform="matrix(1,0,0,1,-561.354,47.1875)">
@@ -333,7 +333,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="390" r="12"/>
             </g>
         </g>
         <g class="clickable skill" id="안드로이드" transform="matrix(1,0,0,1,-394.577,63.1875)">
@@ -371,7 +371,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="390" r="20"/>
             </g>
         </g>
         <g class="clickable skill" id="깃" transform="matrix(1,0,0,1,-572.01,536.808)">
@@ -387,7 +387,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="385" r="24"/>
             </g>
         </g>
         <g class="clickable skill" id="스프링" transform="matrix(1,0,0,1,-419.271,369.467)">
@@ -412,7 +412,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="32"/>
             </g>
         </g>
         <g class="clickable skill" id="TS" transform="matrix(1,0,0,1,70.6646,561.946)">
@@ -449,7 +449,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="385" r="24"/>
             </g>
         </g>
         <g class="clickable skill" id="Node" transform="matrix(1,0,0,1,70.9312,369)">
@@ -477,7 +477,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="385" r="24"/>
             </g>
         </g>
         <g class="clickable skill" id="데이터통신" transform="matrix(1,0,0,1,-116.667,-54.5104)">
@@ -520,7 +520,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="30"/>
             </g>
         </g>
         <g class="clickable skill" id="신호및시스템" transform="matrix(1,0,0,1,105.917,-174)">
@@ -564,7 +564,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="30"/>
             </g>
         </g>
         <g class="clickable skill" id="운영체제" transform="matrix(1,0,0,1,18.2396,-340)">
@@ -605,7 +605,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,37,189)">
-                <circle cx="673" cy="390" r="16"/>
+                <circle cx="673" cy="380" r="24"/>
             </g>
         </g>
         <g class="clickable skill" id="React" transform="matrix(1,0,0,1,-66,23.1417)">
@@ -627,7 +627,7 @@
                 </g>
             </g>
             <g transform="matrix(1,0,0,1,73,114)">
-                <circle cx="443" cy="983" r="50"/>
+                <circle cx="443" cy="983" r="42"/>
             </g>
         </g>
     </g>
